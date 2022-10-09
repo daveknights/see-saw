@@ -1,0 +1,53 @@
+.container {
+    align-items: center;
+    background: lightgray;
+    display: flex;    
+    flex-direction: column;
+    height: 500px;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.fulcrum {
+    border-bottom: 50px solid black;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    height: 0;
+    width: 0; 
+}
+
+.plank {
+    background: black;
+    height: 7px;
+    transform: rotate(11deg);
+    transform-origin: bottom;
+    width: 500px;
+}
+
+.objects {
+    display: flex;
+    height: 300px;
+    justify-content: space-between;
+    position: relative;
+    transform: rotate(11deg);
+    transform-origin: bottom;
+    width: 500px;
+}
+
+.object-1,
+.object-2 {
+    background: black;
+    height: 50px;
+    position: relative;
+    width: 50px;
+}
+
+.object-1 {
+    left: -20px;
+    transform: rotate(-11deg);
+}
+
+.object-2 {
+    align-self: flex-end;
+    right: 20px;
+}
